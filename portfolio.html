@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="header">
+    <nav>
+        <h1>PORTFOLIO</h1>  
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="intro-img">
+    <img src="https://img.freepik.com/premium-vector/cartoon-female-programmer-with-glasses-working-computer-white-background_207579-3944.jpg?w=200" alt="Profile Image">
+</div>
+
+<div class="section" id="home">
+    <h3 class="title">Hello, I'm Janathul Afrin</h3>
+    <p>• Web Developer</p> 
+    <p>• Student</p>
+    <p>• Front-End Enthusiast</p>
+    <p>• I love building simple and user-friendly websites.</p>
+</div>
+
+<hr>
+
+<div class="section" id="about">
+    <h2 class="title">ABOUT ME</h2>
+    <p>Hi, I'm Janathul Afrin, a Computer Science Engineering student.</p>
+    <p>I am passionate about web development and creative design projects.</p>
+    <p>I love solving problems and turning ideas into something real.</p>
+</div>
+
+<hr>
+
+<div class="section" id="skills">
+    <h2 class="title">SKILLS</h2>
+    <div class="box">
+        <ul>
+            <li>HTML & CSS</li>
+            <li>C Language</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Git & GitHub</li>
+            <li>Responsive Design</li>
+        </ul>
+    </div>
+</div>
+
+<hr>
+
+<div class="section" id="education">
+    <h2 class="title">EDUCATION</h2>
+
+    <p>
+        <strong>B.E Computer Science Engineering</strong><br>
+        Bannari Amman Institute of Technology<br>
+        2025-2029
+    </p>
+
+    <p>
+        <strong>Higher Secondary (12th Grade)</strong><br>
+        ES Lords International National School<br>
+        Villupuram, Tamil Nadu<br>
+        85%
+    </p>
+
+    <p>
+        <strong>SSLC (10th Grade)</strong><br>
+        V.E.T Vidyaa Mandhri CBSE School<br>
+        Villupuram, Tamil Nadu<br>
+        88%
+    </p>
+</div>
+
+<hr>
+
+<div class="section" id="projects">
+    <h2 class="title">PROJECTS</h2>
+
+    <div class="box">
+        <h3>1. Personal Portfolio Website</h3>
+        <p>Created a responsive portfolio using HTML and CSS.</p>
+    </div>
+
+    <div class="box">
+        <h3>2. Simple Calculator</h3>
+        <p>Calculator using HTML, CSS and JavaScript.</p>
+    </div>
+
+    <div class="box">
+        <h3>3. To-Do List</h3>
+        <p>Task manager to add and delete daily works.</p>
+    </div>
+</div>
+
+<hr>
+
+<div class="section" id="contact">
+    <h2 class="title">CONTACT</h2>
+    <p><a href="https://www.linkedin.com/in/janathul-afrin-81070937a" target="_blank">LinkedIn</a></p>
+    <p>Phone: +91 8148045903</p>
+    <p>Email: janathukafrinj.cs25@bitsathy.ac.in</p>
+    <p>Location: India</p>
+</div>
+
+<div class="footer">
+    <p>Hire Me!</p>
+</div>
+
+</body>
+
+<!-- CSS STARTS HERE -->
+<style>
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:pink;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background-color:#ffffff;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav h1{
+    color:#e91e63;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    font-weight:bold;
+    color:#333;
+}
+
+nav ul li a:hover{
+    color:#e91e63;
+}
+
+/* Image */
+.intro-img{
+    text-align:center;
+    margin-top:30px;
+}
+
+.intro-img img{
+    width:200px;
+    border-radius:50%;
+    border:4px solid white;
+}
+
+/* Sections */
+.section{
+    padding:40px 60px;
+}
+
+.title{
+    margin-bottom:15px;
+    color:#e91e63;
+}
+
+/* Box */
+.box{
+    background-color:white;
+    padding:20px;
+    margin-top:15px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+#projects .box{
+    margin-bottom:20px;
+}
+
+/* Contact */
+#contact a{
+    text-decoration:none;
+    color:#e91e63;
+    font-weight:bold;
+}
+
+#contact a:hover{
+    text-decoration:underline;
+}
+
+/* Footer */
+.footer{
+    text-align:center;
+    padding:20px;
+    background-color:white;
+    font-weight:bold;
+    color:#e91e63;
+    margin-top:30px;
+}
+
+/* Responsive */
+@media (max-width:768px){
+    nav{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:10px;
+        margin-top:10px;
+    }
+
+    .section{
+        padding:30px 20px;
+    }
+}
+
+</style>
+
+</html>
